@@ -105,7 +105,7 @@ body{
     position: absolute;
     top:23vh;
     left:10vw;
-    border: 1px ridge rgba(128, 128, 128, 0.356);
+    border: 1px solid rgba(128, 128, 128, 0.356);
     overflow: auto;
     background-image: linear-gradient(to left top, #24292f, #21262c, #1f2329, #1c2126, #1a1e23);
     -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
@@ -124,7 +124,7 @@ body{
     position: absolute;
     top:23vh;
     left:55vw;
-    border: 1px ridge rgba(128, 128, 128, 0.356);
+    border: 1px solid rgba(128, 128, 128, 0.356);
     overflow: auto;
     padding: 2vw;
     padding-left: 7vw;
@@ -137,7 +137,7 @@ body{
 }
 .contenido__links__a{
     display: block;
-    padding: 5px;
+    padding: 4px;
     margin: 2.5vh;
     overflow: hidden;
     background-color: rgba(38, 38, 39, 0.764);
@@ -145,6 +145,7 @@ body{
     font-size: 1.7rem;
     border-radius: 10px; 
     text-decoration: none;
+    border: 1px solid rgb(65, 66, 73);
 }
 
 

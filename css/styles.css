@@ -30,7 +30,7 @@ body{
     height: 100vh;     
 }
 .cabecera{
-    display: block;
+
     height: 13vh;
     width: 100vw;
     background-color: rgb(54, 54, 54);
@@ -41,28 +41,16 @@ body{
 
 }
 .cabecera__titulo{
-    position: absolute;
-    top: 2.5%;
-    left: 2vw;
-    width: 55vw;
-    height: 7vh;
+
     background-color: rgba(204, 204, 204, 0.5);
     overflow: auto;
     border-radius: 10px 0px 0px 10px; 
 }
 .cabecera__logo{
-    padding-top: 1vh;
-    height: 5vh;
-    position: absolute;
-    top: 2%;
-    left: 2%;
+
 }
 .cabecera__texto{
-    width: 45vw;
-    height: 5vh;
-    position: absolute;
-    top: 2%;
-    left: 7%;
+
     color: rgb(41, 41, 41);
     padding-top: 0.5vh;
     font-style: italic;
@@ -70,22 +58,17 @@ body{
 .cabecera__nav{
     width: 40vw;
     height: 7vh;
-    position: absolute;
-    top:2.5%; 
-    right:3%;
-    display: inline;
+
     background-color: rgba(237, 237, 237, 0.145);
     text-align: right;
     color: rgb(204, 204, 204);
-    padding-right: 2vw;
-    padding-top: 2vh;
+
     overflow: auto;
     border-radius: 0px 10px 10px 0px;
 }
 .cabecera__nav__a{
     background-color: rgba(38, 38, 39, 0.764);
-    padding: 6px;
-    margin: 2px;
+
     text-decoration: none;
     color: rgba(255, 255, 255, 0.747);    
     border-radius: 10px; 
@@ -93,7 +76,7 @@ body{
 
 
 .contenido{
-    display: block;
+
     height: 80vh;
     color: rgb(204, 204, 204);
     text-align: center;
@@ -102,15 +85,13 @@ body{
 .contenido__info{
     width: 35vw;
     height: 60vh;
-    position: absolute;
-    top:23vh;
-    left:10vw;
+
     border: 1px solid rgba(128, 128, 128, 0.356);
     overflow: auto;
     background-image: linear-gradient(to left top, #24292f, #21262c, #1f2329, #1c2126, #1a1e23);
     -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75); 
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     border-radius: 10px   
 }
 .contenido__info__p{
@@ -121,9 +102,7 @@ body{
 .contenido__links{
     width: 35vw;
     height: 60vh;
-    position: absolute;
-    top:23vh;
-    left:55vw;
+
     border: 1px solid rgba(128, 128, 128, 0.356);
     overflow: auto;
     padding: 2vw;
@@ -132,13 +111,12 @@ body{
     background-image: linear-gradient(to left top, #24292f, #21262c, #1f2329, #1c2126, #1a1e23);
     -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     border-radius: 10px
 }
 .contenido__links__a{
-    display: block;
-    padding: 4px;
-    margin: 2.5vh;
+
+
     overflow: hidden;
     background-color: rgba(38, 38, 39, 0.764);
     color: rgba(255, 255, 255, 0.747);
@@ -150,10 +128,7 @@ body{
 
 
 .pie{
-    padding-top: 1vh;
-    position: absolute;
-    bottom: 0%;
-    display: inline-block;
+
     height: 7vh;
     width: 100vw;
     background-color: rgb(54, 54, 54);
@@ -164,8 +139,7 @@ body{
 }
 .pie__info{
     /*En esta clase aún tendré que agregar propiedades para alguna imagen que coloque en el footer antes del texto, pero aún no decido cual, por lo pronto no colocaré ninguna.*/
-    position: absolute;
-    left: 2vw;
+
     width: 75vw;
     height: 4.55vh;
     background-color: rgba(237, 237, 237, 0.145);
@@ -173,22 +147,21 @@ body{
     border-radius: 10px 0px 0px 10px; 
 }
 .pie__info__disclaimer{
-    padding: 1vh;
+
     font-size: 0.8rem;
     text-align: right;
 }
 .pie__links{
-    position: absolute;
-    right:3vw;
+
     background-color: rgb(204, 204, 204, 0.5);
     width: 20vw;
     height: 4.5vh;
-    padding-top: 0.8vh;
-    padding-left: 3vw;
+
     overflow: auto;
     border-radius: 0px 10px 10px 0px;
 }
 .pie__links_img{
-    margin-right: 2vw;
+
     width: 1.4vw;
 }
+

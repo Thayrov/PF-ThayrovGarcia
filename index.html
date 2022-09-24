@@ -6,23 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mis Apuntes de Programación</title>
-    <link rel="stylesheet" href="./css/styles.css">
+
     <link rel="icon" href="./favicon.ico">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
 <!--En el header muestro el nombre del sitio y los links a sus secciones-->
-    <header class="cabecera">
-        <div class="cabecera__titulo">
-            <img class="cabecera__logo" src="https://cdn.iconscout.com/icon/free/png-256/notes-172-470361.png" width="30 rem" alt="Logo en forma de bloc de notas">
-            <h1 class="cabecera__texto">Mis Apuntes de Programación</h1>
+    
+    <div class="container-fluid">
+    <header class="container-fluid row cabecera">
+        <div class="col-7 row cabecera__titulo">
+            <img class="col-xl-2 cabecera__logo" src="./images/logo.png" alt="Logo en forma de bloc de notas">
+            <h1 class="col-xl-10 cabecera__texto">Mis Apuntes de Programación</h1>
         </div>
-        <nav class="cabecera__nav">
+        <nav class="col-5 cabecera__nav">
             <a class="cabecera__nav__a" href="#">Home</a>
-
             <a class="cabecera__nav__a" href="pages/apuntes.html">Apuntes</a>
-            
             <a class="cabecera__nav__a" href="pages/toolkit.html">Toolkit</a>
             <a class="cabecera__nav__a" href="pages/reflexiones.html">Reflexiones</a>
             <a class="cabecera__nav__a" href="pages/quiensoy.html">¿Quién Soy?</a>
@@ -55,8 +58,9 @@
             <a href="https://www.linkedin.com/in/thayrov-garc%C3%ADa-tovar-01a18757/"><img class="pie__links_img" src="./images/1200px-Linkedin_icon.png" alt="Logo de LinkedIn"></a>        
         </div>
     </footer>
-    
+    </div>
     <script> src="./scripts/bootstrap.bundle.min.js" </script>
+    
 </body>
 
 </html>

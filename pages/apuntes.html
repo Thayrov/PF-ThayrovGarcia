@@ -19,12 +19,12 @@
             <nav class="navbar navbar-expand-md navbar-dark fixed-top cabecera">
                 <div class="container-fluid">
                     <img class="cabecera__logo mx-1" src="../images/w_logo.png" alt="Logo en forma de bloc de notas">
-                        <a class="navbar-brand cabecera__titulo pt-2 px-3" href="#"><code>mis_apuntes_de_programación</code></a>
+                        <a class="navbar-brand cabecera__titulo pt-2 px-3 animate__animated animate__flipInX" href="#"><code>mis_apuntes_de_programación</code></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <ul class="navbar-nav me-auto mb-2 mb-md-0  ms-auto">
+                        <ul class="navbar-nav me-auto mb-2 mb-md-0  ms-auto ">
                             <li class="nav-item cabecera__nav__a cabecera__nav__a__home mx-1">
                                 <a class="nav-link" aria-current="page" href="../index.html"><code>home</code></a>
                             </li>
@@ -49,19 +49,19 @@
             </nav>
         </header>
 <!--En este main se podrá seleccionar el contenido de los apuntes-->
-        <main class="contenido">
-            <section>
-            <h1>Mis Apuntes</h1>
-            <p>En esta sección podrás encontrar todos los apuntes que tomé durante mis clases de la carrera de Desarrollo Web Full Stack.</p>
-            <br>
-            <p>A continuación puedes elegir el curso que sea de tu interés:</p>
-            <br>
-            <ul>
-            <li><a href="desarrolloweb.html">Desarrollo Web</a></li>
-            <li><a href="javascript.html">JavaSript</a></li>
-            <li><a href="reactjs.html">React JS</a></li>
-            <li><a href="backend.html">Programación Backend</a></li>
-            </ul>
+        <main class="row justify-content-evenly contenido">
+            <section class="col contenido__info m-5">
+                <h1 class="apuntes__contenido__info__p animate__animated animate__fadeIn"><code>mis_apuntes</code></h1>
+                <p class="apuntes__contenido__info__p animate__animated animate__fadeIn"><code>En esta sección podrás encontrar todos los apuntes que tomé durante mis clases de la carrera de Desarrollo Web Full Stack.</code></p>
+                <p class="apuntes__contenido__info__p animate__animated animate__fadeIn"><code>A continuación puedes elegir el curso que sea de tu interés:</code></p>
+            </section>
+            <section class="col contenido__links m-5 ">
+                <ul class="navbar-nav p-5 animate__animated animate__fadeIn">
+                    <li class="my-2 p-2 apuntes__contenido__links__li"><a class="contenido__links__a" href="desarrolloweb.html"><code>desarrollo_web</code></a></li>                     
+                    <li class="my-2 p-2 apuntes__contenido__links__li"><a class="contenido__links__a" href="javascript.html"><code>javaScript</code></a></li>
+                    <li class="my-2 p-2 apuntes__contenido__links__li"><a class="contenido__links__a" href="reactjs.html"><code>react_js</code></a></li>
+                    <li class="my-2 p-2 apuntes__contenido__links__li"><a class="contenido__links__a" href="backend.html"><code>backend</code></a></li>
+                </ul>
             </section>
         </main>   
         

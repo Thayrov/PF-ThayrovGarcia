@@ -27,12 +27,14 @@ body {
     height: 40px; }
   .cabecera .cabecera__nav__a {
     height: 7vh;
+    text-align: center;
     background-color: rgba(38, 38, 39, 0.764);
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.747);
     border: 1px solid rgba(128, 128, 128, 0.356);
-    border-radius: 10px;
-    text-align: center; }
+    border-radius: 10px; }
+    .cabecera .cabecera__nav__a:hover {
+      -webkit-box-shadow: 0px 0px 2px 1px #0091ff;
+      -moz-box-shadow: 0px 0px 2px 1px  #0091ff;
+      box-shadow: 0px 0px 2px 1px #0091ff; }
   .cabecera .cabecera__nav__a__home {
     margin-top: 0; }
 

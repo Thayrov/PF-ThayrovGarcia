@@ -25,6 +25,12 @@
             justify-content: space-around;
             .pie__links_img{
                 width: 1.4vw;
+                &:hover{
+                    border-radius: $round-border-radius*2;
+                    -webkit-box-shadow: $sombreado-botones;
+                    -moz-box-shadow: $sombreado-botones;
+                    box-shadow: $sombreado-botones; 
+                } 
             }
         }
     }
@@ -33,6 +39,7 @@
 @media screen and (max-width:768px){
     .pie{ 
         .pie__info{
+            margin-top: 8px;
             .pie__info__disclaimer{
                 display: none;
             }
@@ -46,8 +53,8 @@
                 .pie__links_img{
                     margin-top: 3px;
                     list-style: none;
-                    width: 5vw;
-                    }
+                    width: 5vw; 
+                }
             }    
         }
     }

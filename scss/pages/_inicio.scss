@@ -13,7 +13,7 @@
         border-radius: $round-border-radius;   
         .contenido__info__p{
             font-size: $fuente-med;
-            padding: 5vw;
+            padding: 6vw;
             color: $text-color;
             .contenido__links__a{
                 color: $links-color;
@@ -33,17 +33,23 @@
         -moz-box-shadow: $sombreado-main;
         box-shadow: $sombreado-main-gradient;
         border-radius: $round-border-radius;
-        .contenido__links__li{
-            width: 20vw;
-            max-width: 30vw;
-            margin: 0 auto;
-            background-color: $botones-b-color;
-            border-radius: $round-border-radius; 
-            border: $border-style;
-            .contenido__links__a{
-                color: $links-color;
-                font-size: $fuente-med;
-                text-decoration: none;
+        .contenido__links__a{
+            color: $text-color;
+            font-size: $fuente-med;
+            text-decoration: none;
+            .contenido__links__li{
+                width: 20vw;
+                max-width: 30vw;
+                margin: 0 auto;
+                background-color: $botones-b-color;
+                border-radius: $round-border-radius; 
+                border: $border-style;
+                &:hover{
+                    color: $links-color;
+                    -webkit-box-shadow: $sombreado-botones;
+                    -moz-box-shadow: $sombreado-botones;
+                    box-shadow: $sombreado-botones; 
+                }    
             }
         }
     }
@@ -65,8 +71,10 @@
             width: 80%;
             margin-left: auto;
             margin-right: auto;
-            .contenido__links__li{
-                width: 50vw;
+            .contenido__links__a{
+                .contenido__links__li{
+                    width: 60vw;
+                }
             }
         }
     }

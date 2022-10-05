@@ -1,0 +1,44 @@
+/*Clases del <header>*/
+.cabecera{
+    width: 100%;
+    background-color: $header-b-color;
+    color: $text-color;
+    -webkit-box-shadow: $sombreado-header;
+    -moz-box-shadow: $sombreado-header;
+    box-shadow: $sombreado-header;
+    .cabecera__titulo{
+        height: 7vh;
+        width: 60vw;
+        background-color: $header-sec-b-color;
+        border-radius: $round-border-radius;
+        font-style: $italic-style; 
+    }
+    .cabecera__logo{
+        width: 40px;
+        height: 40px;
+    }
+    .cabecera__nav__a{
+        height: 7vh;
+        text-align: $text-center;
+        background-color: $botones-b-color;
+        border: $border-style;
+        border-radius: $round-border-radius; 
+        &:hover {
+            -webkit-box-shadow: $sombreado-botones;
+            -moz-box-shadow: $sombreado-botones;
+            box-shadow: $sombreado-botones;   
+        }
+    }
+    .cabecera__nav__a__home{
+        margin-top: 0;
+    }
+}
+/*Media Queries*/
+@media screen and (max-width: 767px){
+    .cabecera .cabecera__nav__a{
+        margin-top: 2px;
+    }
+    .cabecera .cabecera__nav__a__home{
+        margin-top: 10px;
+    }
+}

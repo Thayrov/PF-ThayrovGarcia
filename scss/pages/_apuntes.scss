@@ -67,15 +67,10 @@
         }
     }
 }
-
-
-
 .animate__animated .animate__fadeIn {
     --animate-duration: 2s;
 }
-
 /*Media Queries*/
-
 @media screen and (max-width: 992px) {
     .contenido {
         flex-direction: column;

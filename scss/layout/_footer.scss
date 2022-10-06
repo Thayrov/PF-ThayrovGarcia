@@ -1,20 +1,22 @@
 /*Clases del <footer>*/
 .pie{
-    width: 100%;
+    width: map-get($widths,cabecera);
     background-color: $header-b-color;
     color: $header-sec-b-color;
     -webkit-box-shadow: $sombreado-footer;
     -moz-box-shadow: $sombreado-footer;
     box-shadow: $sombreado-footer;
     .pie__logo{
-        width: 40px;
-        height: 40px;
+        height: map-get($heights,logo);
+        width: map-get($widths,logo);
     }
     .pie__info{
         background-color: $header-sec-b-color;
         border-radius: $round-border-radius; 
+        border: $border-style;
+        box-shadow: $sombreado-titulo;
         .pie__info__disclaimer{
-            width: 80vw;
+            width: map-get($widths,pie-info-disclaimer);
             font-size: $fuente-peq;
             text-align: $text-left;
         }
@@ -23,8 +25,9 @@
         }
         .pie__links{
             justify-content: space-around;
+            padding-bottom: map-get($paddings,bottom-3);
             .pie__links_img{
-                width: 1.4vw;
+                width: map-get($widths,pie-links-img);
                 &:hover{
                     border-radius: $round-border-radius*2;
                     -webkit-box-shadow: $sombreado-botones;
@@ -39,7 +42,7 @@
 @media screen and (max-width:768px){
     .pie{ 
         .pie__info{
-            margin-top: 8px;
+            margin-top: map-get($margins,top-8);
             .pie__info__disclaimer{
                 display: none;
             }
@@ -51,9 +54,9 @@
                 flex-direction: row;
                 justify-content: space-evenly;
                 .pie__links_img{
-                    margin-top: 3px;
+                    margin-top: map-get($margins,top-3);
                     list-style: none;
-                    width: 5vw; 
+                    width: map-get($widths,pie-links-img-mq);
                 }
             }    
         }

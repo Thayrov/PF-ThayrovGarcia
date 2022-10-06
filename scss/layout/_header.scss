@@ -1,24 +1,26 @@
 /*Clases del <header>*/
 .cabecera{
-    width: 100%;
+    width: map-get($widths,cabecera);
     background-color: $header-b-color;
     color: $text-color;
     -webkit-box-shadow: $sombreado-header;
     -moz-box-shadow: $sombreado-header;
     box-shadow: $sombreado-header;
     .cabecera__titulo{
-        height: 7vh;
-        width: 60vw;
+        height: map-get($heights,cabecera-titulo);
+        width: map-get($widths,cabecera-titulo);
         background-color: $header-sec-b-color;
         border-radius: $round-border-radius;
         font-style: $italic-style; 
+        border: $border-style;
+        box-shadow: $sombreado-titulo;
     }
     .cabecera__logo{
-        width: 40px;
-        height: 40px;
+        height: map-get($heights,logo);
+        width: map-get($widths,logo);
     }
     .cabecera__nav__a{
-        height: 7vh;
+        height: map-get($heights,cabecera-titulo);
         text-align: $text-center;
         background-color: $botones-b-color;
         border: $border-style;
@@ -30,15 +32,15 @@
         }
     }
     .cabecera__nav__a__home{
-        margin-top: 0;
+        margin-top: map-get($margins,top-0);
     }
 }
 /*Media Queries*/
 @media screen and (max-width: 767px){
     .cabecera .cabecera__nav__a{
-        margin-top: 2px;
+        margin-top: map-get($margins,top-2);
     }
     .cabecera .cabecera__nav__a__home{
-        margin-top: 10px;
+        margin-top: map-get($margins,top-10);
     }
 }

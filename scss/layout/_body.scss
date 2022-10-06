@@ -1,5 +1,5 @@
 body{
     background-color: $background-color;
-    padding-top: 6rem; 
-    padding-bottom: 6rem;
+    padding-top: map-get($paddings,top-6r);
+    padding-bottom: map-get($paddings,bottom-6r);
 }

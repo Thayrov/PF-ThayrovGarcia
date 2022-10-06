@@ -5,7 +5,7 @@
     .contenido__info{
         width: map-get($widths,contenido-info);
         @include borde ();
-        @include sombra ($sombreado-main);
+        @include sombra (-main);
         box-shadow: $sombreado-main-gradient;
         background-image: $background-gradient;
         overflow: auto;
@@ -36,7 +36,7 @@
                 @include borde ();
                 &:hover{
                     color: $links-color;
-                    @include sombra ($sombreado-botones); 
+                    @include sombra (-botones); 
                 }    
             }
         }

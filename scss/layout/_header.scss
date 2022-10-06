@@ -1,7 +1,7 @@
 /*Clases del <header>*/
 .cabecera{
     @include estilo-cabecera (map-get($widths,cabecera),$header-b-color,$text-color);  
-    @include sombra ($sombreado-header);
+    @include sombra (-header);
     .cabecera__titulo{
         @include estilo-cabecera (map-get($widths,w-60vw),$header-sec-b-color,0);  
         @include borde ();
@@ -18,7 +18,7 @@
         background-color: $botones-b-color;
         @include borde ();
         &:hover {
-            @include sombra ($sombreado-botones);   
+            @include sombra (-botones);   
         }
     }
     .cabecera__nav__a__home{

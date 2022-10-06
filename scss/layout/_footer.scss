@@ -1,7 +1,7 @@
 /*Clases del <footer>*/
 .pie{
     @include estilo-cabecera (map-get($widths,cabecera),$header-b-color,$header-sec-b-color);    
-    @include sombra ($sombreado-footer,);
+    @include sombra (-footer,);
     .pie__logo{
     @include logo ();
     }
@@ -25,7 +25,7 @@
                 width: map-get($widths,pie-links-img);
                 &:hover{
                     border-radius: $round-border-radius*2;
-                    @include sombra ($sombreado-botones);
+                    @include sombra (-botones);
                 } 
             }
         }

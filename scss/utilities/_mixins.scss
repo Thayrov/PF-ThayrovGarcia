@@ -8,10 +8,28 @@
     background-color: $b-ground;
     color: $color;
 }
-@mixin sombra ($shadow) {
-    -webkit-box-shadow: $shadow;
-    -moz-box-shadow: $shadow;
-    box-shadow: $shadow;
+@mixin sombra ($shadow:$sombreado-main) {
+    @if $shadow == -botones{
+        -webkit-box-shadow: $sombreado-botones;
+        -moz-box-shadow: $sombreado-botones;
+        box-shadow: $sombreado-botones;
+    }@else if $shadow == -header{
+        -webkit-box-shadow: $sombreado-header;
+        -moz-box-shadow: $sombreado-header;
+        box-shadow: $sombreado-header;
+    }@else if $shadow == -main{
+        -webkit-box-shadow: $sombreado-main;
+        -moz-box-shadow: $sombreado-main;
+        box-shadow: $sombreado-main;
+    }@else if $shadow == -footer{
+        -webkit-box-shadow: $sombreado-footer;
+        -moz-box-shadow: $sombreado-footer;
+        box-shadow: $sombreado-footer;
+    }@else{
+        -webkit-box-shadow: $shadow;
+        -moz-box-shadow: $shadow;
+        box-shadow: $shadow;
+    }
 }
 @mixin borde ($border:$border-style,$radius:$round-border-radius) {
     border: $border;

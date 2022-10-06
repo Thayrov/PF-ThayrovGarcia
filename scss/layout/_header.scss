@@ -1,34 +1,24 @@
 /*Clases del <header>*/
 .cabecera{
-    width: map-get($widths,cabecera);
-    background-color: $header-b-color;
-    color: $text-color;
-    -webkit-box-shadow: $sombreado-header;
-    -moz-box-shadow: $sombreado-header;
-    box-shadow: $sombreado-header;
+    @include estilo-cabecera (map-get($widths,cabecera),$header-b-color,$text-color);  
+    @include sombra ($sombreado-header);
     .cabecera__titulo{
-        height: map-get($heights,cabecera-titulo);
-        width: map-get($widths,w-60vw);
-        background-color: $header-sec-b-color;
-        border-radius: $round-border-radius;
+        @include estilo-cabecera (map-get($widths,w-60vw),$header-sec-b-color,0);  
+        @include borde ();
         font-style: $italic-style; 
-        border: $border-style;
+        height: map-get($heights,cabecera-titulo);
         box-shadow: $sombreado-titulo;
     }
     .cabecera__logo{
-        height: map-get($heights,logo);
-        width: map-get($widths,logo);
+        @include logo ();
     }
     .cabecera__nav__a{
         height: map-get($heights,cabecera-titulo);
         text-align: $text-center;
         background-color: $botones-b-color;
-        border: $border-style;
-        border-radius: $round-border-radius; 
+        @include borde ();
         &:hover {
-            -webkit-box-shadow: $sombreado-botones;
-            -moz-box-shadow: $sombreado-botones;
-            box-shadow: $sombreado-botones;   
+            @include sombra ($sombreado-botones);   
         }
     }
     .cabecera__nav__a__home{

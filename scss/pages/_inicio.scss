@@ -4,13 +4,11 @@
     text-align: $text-center;
     .contenido__info{
         width: map-get($widths,contenido-info);
-        border: $border-style;
-        overflow: auto;
-        background-image: $background-gradient;
-        -webkit-box-shadow: $sombreado-main;
-        -moz-box-shadow: $sombreado-main;
+        @include borde ();
+        @include sombra ($sombreado-main);
         box-shadow: $sombreado-main-gradient;
-        border-radius: $round-border-radius;   
+        background-image: $background-gradient;
+        overflow: auto;
         .contenido__info__p{
             font-size: $fuente-med;
             padding: map-get($paddings,p-6vw);
@@ -25,14 +23,7 @@
     .contenido__links{
         list-style: none;
         flex-direction: column;
-        width: map-get($widths,contenido-info);
-        border: $border-style;
-        overflow: auto;
-        background-image: $background-gradient;
-        -webkit-box-shadow: $sombreado-main;
-        -moz-box-shadow: $sombreado-main;
-        box-shadow: $sombreado-main-gradient;
-        border-radius: $round-border-radius;
+        @extend .contenido__info;
         .contenido__links__a{
             color: $text-color;
             font-size: $fuente-med;
@@ -42,13 +33,10 @@
                 max-width: map-get($widths,max-width-30vw);
                 margin: map-get($margins,0-auto);
                 background-color: $botones-b-color;
-                border-radius: $round-border-radius; 
-                border: $border-style;
+                @include borde ();
                 &:hover{
                     color: $links-color;
-                    -webkit-box-shadow: $sombreado-botones;
-                    -moz-box-shadow: $sombreado-botones;
-                    box-shadow: $sombreado-botones; 
+                    @include sombra ($sombreado-botones); 
                 }    
             }
         }
@@ -63,14 +51,12 @@
         flex-direction: column;
         overflow: auto;
         .contenido__info{
+            @include centrado ();
             width: map-get($widths,contenido-info-mq);
-            margin-left: map-get($margins,auto);
-            margin-right: map-get($margins,auto);
         }
         .contenido__links{
+            @include centrado ();
             width: map-get($widths,contenido-info-mq);
-            margin-left: map-get($margins,auto);
-            margin-right: map-get($margins,auto);
             .contenido__links__a{
                 .contenido__links__li{
                     width: map-get($widths,w-60vw);

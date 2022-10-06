@@ -1,0 +1,27 @@
+@mixin body ($bgc:$background-color,$pt:map-get($paddings,top-6r),$pb:map-get($paddings,bottom-6r)) {
+    background-color: $bgc;
+    padding-top: $pt;
+    padding-bottom: $pb;
+}
+@mixin estilo-cabecera ($width, $b-ground, $color) {
+    width: $width;
+    background-color: $b-ground;
+    color: $color;
+}
+@mixin sombra ($shadow) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+@mixin borde ($border:$border-style,$radius:$round-border-radius) {
+    border: $border;
+    border-radius: $radius;
+}
+@mixin centrado ($mx:map-get($margins,auto)){
+    margin-left: $mx;
+    margin-right: $mx;
+}
+@mixin logo ($height:map-get($heights,logo),$width:map-get($widths,logo)){
+    height: $height;
+    width: $width;
+}

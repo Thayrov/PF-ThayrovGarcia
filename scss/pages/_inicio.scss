@@ -3,7 +3,7 @@
     color: $header-sec-b-color;
     text-align: $text-center;
     .contenido__info{
-        width: 35vw;
+        width: map-get($widths,contenido-info);
         border: $border-style;
         overflow: auto;
         background-image: $background-gradient;
@@ -13,7 +13,7 @@
         border-radius: $round-border-radius;   
         .contenido__info__p{
             font-size: $fuente-med;
-            padding: 6vw;
+            padding: map-get($paddings,p-6vw);
             color: $text-color;
             .contenido__links__a{
                 color: $links-color;
@@ -25,7 +25,7 @@
     .contenido__links{
         list-style: none;
         flex-direction: column;
-        width: 35vw;
+        width: map-get($widths,contenido-info);
         border: $border-style;
         overflow: auto;
         background-image: $background-gradient;
@@ -38,9 +38,9 @@
             font-size: $fuente-med;
             text-decoration: none;
             .contenido__links__li{
-                width: 20vw;
-                max-width: 30vw;
-                margin: 0 auto;
+                width: map-get($widths,contenido-links-li);
+                max-width: map-get($widths,max-width-30vw);
+                margin: map-get($margins,0-auto);
                 background-color: $botones-b-color;
                 border-radius: $round-border-radius; 
                 border: $border-style;
@@ -63,17 +63,17 @@
         flex-direction: column;
         overflow: auto;
         .contenido__info{
-            width: 80%;
-            margin-left: auto;
-            margin-right: auto;
+            width: map-get($widths,contenido-info-mq);
+            margin-left: map-get($margins,auto);
+            margin-right: map-get($margins,auto);
         }
         .contenido__links{
-            width: 80%;
-            margin-left: auto;
-            margin-right: auto;
+            width: map-get($widths,contenido-info-mq);
+            margin-left: map-get($margins,auto);
+            margin-right: map-get($margins,auto);
             .contenido__links__a{
                 .contenido__links__li{
-                    width: 60vw;
+                    width: map-get($widths,w-60vw);
                 }
             }
         }

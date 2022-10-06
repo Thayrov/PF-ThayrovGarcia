@@ -33,21 +33,30 @@ $heights:(
 );
 $widths:(
     cabecera: 100%,
-    cabecera-titulo: 60vw,
+    w-60vw: 60vw,
     logo: 40px,
+    contenido-info: 35vw,
+    contenido-links-li: 20vw,
+    max-width-30vw: 30vw,
+    contenido-info-mq: 80%,
     pie-info-disclaimer: 80vw,
     pie-links-img: 1.3vw,
     pie-links-img-mq: 8vw,
 );
 $margins:(
-    top-0:0px,
-    top-2:2px,
-    top-3:3px,
-    top-8:8px,
-    top-10:10px,
+    0:0,
+    auto: auto,
+    0-auto: 0 auto,
+    top-0: 0px,
+    top-2: 2px,
+    top-3: 3px,
+    top-8: 8px,
+    top-10: 10px,
 );
 $paddings:(
-    bottom-6r:6rem,
-    bottom-3:3px,
-    top-6r:6rem,
+    p-2vw: 2vw,
+    p-6vw: 6vw,
+    bottom-6r: 6rem,
+    bottom-3: 3px,
+    top-6r: 6rem,
 );

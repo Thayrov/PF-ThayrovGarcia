@@ -3,8 +3,8 @@
     .contenido__info{
         .apuntes__contenido__info__p{
             font-size: $fuente-med;
-            padding: 2vw;
-            margin: 0;
+            padding: map-get($paddings,p-2vw);
+            margin: map-get($margins,0);
             color: $text-color;
         }
     }

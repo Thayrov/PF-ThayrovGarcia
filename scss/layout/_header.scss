@@ -8,7 +8,7 @@
     box-shadow: $sombreado-header;
     .cabecera__titulo{
         height: map-get($heights,cabecera-titulo);
-        width: map-get($widths,cabecera-titulo);
+        width: map-get($widths,w-60vw);
         background-color: $header-sec-b-color;
         border-radius: $round-border-radius;
         font-style: $italic-style; 

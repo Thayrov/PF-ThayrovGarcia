@@ -1,0 +1,11 @@
+/*Clases del <main> de toolkit.html*/
+.contenido{
+    .contenido__info{
+        .toolkit__contenido__info__p{
+            font-size: $fuente-med;
+            padding: map-get($paddings,p-2vw);
+            margin: map-get($margins,0);
+            color: $text-color;
+        }
+    }
+}

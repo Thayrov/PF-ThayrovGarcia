@@ -236,8 +236,28 @@ label {
     display: flex;
     justify-content: center; } }
 
+.animate__animated .animate__hinge {
+  --animate-duration: 10s; }
+
+.e404 {
+  color: #ffffffbe; }
+
+.gato_container {
+  height: 45vh; }
+
+@media screen and (max-width: 992px) {
+  .gato {
+    width: 200px; } }
+
 /*Clases del <main> de quiensoy.html*/
 .contenido .contenido__info .quiensoy__contenido__info__p, .contenido .contenido__links .quiensoy__contenido__info__p {
   font-size: 1.7rem;
   padding: 2vw;
+  color: #ffffffbe; }
+
+/*Clases del <main> de toolkit.html*/
+.contenido .contenido__info .toolkit__contenido__info__p, .contenido .contenido__links .toolkit__contenido__info__p {
+  font-size: 1.1rem;
+  padding: 2vw;
+  margin: 0;
   color: #ffffffbe; }

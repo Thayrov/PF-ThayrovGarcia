@@ -1,0 +1,14 @@
+.animate__animated .animate__hinge {
+    --animate-duration: 10s;
+}   
+.e404{
+    color: $text-color;
+}
+.gato_container{
+    height: 45vh;
+}
+@media screen and (max-width: 992px) {
+    .gato{
+        width:200px;
+    }
+}

@@ -51,7 +51,9 @@ body {
   .cabecera .cabecera__nav__a {
     margin-top: 2px; }
   .cabecera .cabecera__nav__a__home {
-    margin-top: 10px; } }
+    margin-top: 10px; }
+  .cabecera .cabecera__titulo {
+    font-size: 0.8rem; } }
 
 /*Clases del <footer>*/
 .pie {

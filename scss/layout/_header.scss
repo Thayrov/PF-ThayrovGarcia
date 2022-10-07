@@ -33,4 +33,9 @@
     .cabecera .cabecera__nav__a__home{
         margin-top: map-get($margins,top-10);
     }
+    .cabecera{
+        .cabecera__titulo{
+            font-size: $fuente-peq;
+        }
+    }
 }

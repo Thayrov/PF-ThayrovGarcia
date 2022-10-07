@@ -50,40 +50,49 @@
             </nav>
         </header>
 <!--En este main podrás elegir algún método para contactarme-->
-    <main class="contenido">
-        <section>
-            <h1>Contacto</h1>
-            <div>
-                <img src="../images/foto.jpg" alt="foto del autor" width="300">
-            </div>
-            <div>
-                <p>Contáctame. Estas son mis redes:</p>
-            </div>   
-            <div>
-                <a href="https://twitter.com/ThayrovG"><img class="pie__links_img" src="../images/free-twitter-logo-icon-2429-thumb.png" alt="Logo de Twitter" width="100"></a>
-                <a href="https://www.facebook.com/thayrovg"><img class="pie__links_img" src="../images/Facebook_Logo.png" alt="Logo de Facebook" width="100"></a>
-                <a href="https://github.com/Thayrov"><img class="pie__links_img" src="../images/img_326384.png" alt="Logo de Github" width="100"></a>
-                <a href="https://www.linkedin.com/in/thayrov-garc%C3%ADa-tovar-01a18757/"><img class="pie__links_img" src="../images/1200px-Linkedin_icon.png" alt="Logo de Linkedin" width="100"></a>        
-            </div>
-            <div>
-                <p>Si deseas escribirme, siéntete libre de hacerlo, por favor deja tus datos:</p>
-                <form action="">
-                    <div>
-                        <input type="text" placeholder="Ingrese su nombre" name="Nombre" >
-                    </div>
-                    <div>
-                        <input type="email" placeholder="Ingrese su correo" name="Email" >
-                    </div>
-                    <div>
-                        <textarea name="Mensaje" placeholder="Ingresa tu mensaje" cols="30" rows="10"></textarea>
-                    </div>
-                    <div>
-                        <input type="submit" value="Envía tu mensaje" name="enviar" id="">
-                    </div>
+    <main class="d-flex justify-content-lg-evenly animate__animated animate__fadeIn contenido pt-5">
+        <code><section class="row contenido__info">
+            <div class="col-lg-5 col-12">
+                <h1 class="contacto__contenido__info__p h1 pt-2">Contacto</h1>
+                <img class="foto" src="../images/foto.jpg" alt="foto del autor" width="250">
+                <p class="contacto__contenido__info__p">Contáctame. Estas son mis redes:</p>
 
+            </div>
+            <div class="col-lg-2 col-12 redes py-5">
+                <div class="p-3">
+                <a href="https://www.linkedin.com/in/thayrov-garc%C3%ADa-tovar-01a18757/" target="_blank"><img class="pie__links_img" src="../images/linkedin_icon.png" width="50px" alt="Logo de LinkedIn"></a>
+                </div>
+                <div class="p-3">
+                <a href="https://github.com/Thayrov" target="_blank"><img class="pie__links_img" src="../images/github_icon.png" width="50px" alt="Logo de Github"></a>
+                </div>
+                <div class="p-3">
+                <a href="https://www.facebook.com/thayrovg" target="_blank"><img class="pie__links_img" src="../images/facebook_icon.png" width="50px" alt="Logo de Facebook"></a>
+                </div>
+                <div class="p-3">
+                <a href="https://twitter.com/ThayrovG" target="_blank"><img class="pie__links_img" src="../images/twitter_icon.png" width="50px" alt="Logo de Twitter"></a>
+                </div>
+            </div> 
+            <div class="col-lg-5 col-12">
+                <p class="contacto__contenido__info__p">Si deseas escribirme, siéntete libre de hacerlo, por favor deja tus datos:</p>
+                <form class="px-5" action="">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="floatingName" placeholder="Nombre">
+                        <label for="floatingName">nombre</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="nombre@ejemplo.com">
+                        <label for="floatingInput">e_mail</label>
+                    </div>
+                    <div class="form-floating">
+                        <textarea name="Mensaje" class="form-control" id="floatingText" placeholder="Ingresa tu mensaje" cols="30" rows="10"></textarea>
+                        <label for="floatingText">ingresa_tu_mensaje</label>
+                    </div>
+                    <div>
+                        <button class="w-100 btn btn-lg btn-secondary my-3 cabecera__nav__a" type="submit">envia_tu_mensaje</button>
+                    </div>
                 </form>
             </div>
-        </section>
+        </section></code>
     </main>
 
     <footer>
@@ -98,16 +107,16 @@
                     <a class="navbar-brand pie__info__disclaimer_sm pb-2 px-3" href="./contacto.html"><code>contáctame,_estas_son_mis_redes:</code></a>
                     <ul class="navbar-nav me-auto mb-2 mb-md-0 ms-auto pie__links">
                         <li class="nav-item mx-1">
-                            <a href="https://www.linkedin.com/in/thayrov-garc%C3%ADa-tovar-01a18757/"><img class="pie__links_img" src="../images/linkedin_icon.png" alt="Logo de LinkedIn"></a>
+                            <a href="https://www.linkedin.com/in/thayrov-garc%C3%ADa-tovar-01a18757/" target="_blank"><img class="pie__links_img" src="../images/linkedin_icon.png" alt="Logo de LinkedIn"></a>
                         </li>
                         <li class="nav-item mx-1">
-                            <a href="https://github.com/Thayrov"><img class="pie__links_img" src="../images/github_icon.png" alt="Logo de Github"></a>
+                            <a href="https://github.com/Thayrov" target="_blank"><img class="pie__links_img" src="../images/github_icon.png" alt="Logo de Github"></a>
                         </li>                            
                         <li class="nav-item mx-1">
-                            <a href="https://www.facebook.com/thayrovg"><img class="pie__links_img" src="../images/facebook_icon.png" alt="Logo de Facebook"></a>
+                            <a href="https://www.facebook.com/thayrovg" target="_blank"><img class="pie__links_img" src="../images/facebook_icon.png" alt="Logo de Facebook"></a>
                         </li>
                         <li class="nav-item mx-1">
-                            <a href="https://twitter.com/ThayrovG"><img class="pie__links_img" src="../images/twitter_icon.png" alt="Logo de Twitter"></a>
+                            <a href="https://twitter.com/ThayrovG" target="_blank"><img class="pie__links_img" src="../images/twitter_icon.png" alt="Logo de Twitter"></a>
                         </li>
                     </ul>
                 </div>

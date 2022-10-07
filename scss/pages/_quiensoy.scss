@@ -1,0 +1,10 @@
+/*Clases del <main> de quiensoy.html*/
+.contenido{    
+    .contenido__info{
+        .quiensoy__contenido__info__p{
+            font-size: $fuente-gde;
+            padding: map-get($paddings,p-2vw);
+            color: $text-color
+        }
+    }
+}

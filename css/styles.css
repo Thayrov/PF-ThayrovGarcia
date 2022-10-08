@@ -20,7 +20,8 @@ body {
   color: #ffffffbe;
   -webkit-box-shadow: 0px 3px 5px 0px #000000bf;
   -moz-box-shadow: 0px 3px 5px 0px #000000bf;
-  box-shadow: 0px 3px 5px 0px #000000bf; }
+  box-shadow: 0px 3px 5px 0px #000000bf;
+  line-height: 3.5vh; }
   .cabecera .cabecera__titulo {
     width: 60vw;
     background-color: #cccccc4a;
@@ -52,8 +53,10 @@ body {
     margin-top: 2px; }
   .cabecera .cabecera__nav__a__home {
     margin-top: 10px; }
-  .cabecera .cabecera__titulo {
-    font-size: 0.9rem; } }
+  .cabecera {
+    line-height: 4.5vh; }
+    .cabecera .cabecera__titulo {
+      font-size: 0.98rem; } }
 
 /*Clases del <footer>*/
 .pie {
@@ -242,20 +245,63 @@ label {
   --animate-duration: 10s; }
 
 .e404 {
-  color: #ffffffbe; }
+  color: #ffffffbe;
+  font-size: 1.1rem; }
 
 .gato_container {
   height: 45vh; }
 
 @media screen and (max-width: 992px) {
   .gato {
-    width: 200px; } }
+    width: 250px; } }
 
 /*Clases del <main> de quiensoy.html*/
 .contenido .contenido__info .quiensoy__contenido__info__p, .contenido .contenido__links .quiensoy__contenido__info__p {
   font-size: 1.7rem;
   padding: 2vw;
   color: #ffffffbe; }
+
+.contenido .carousel__contenido__info {
+  width: 55vw;
+  border: 1px solid #cccccc88;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 3px 5px 0px #000000bf;
+  -moz-box-shadow: 3px 3px 5px 0px #000000bf;
+  box-shadow: 3px 3px 5px 0px #000000bf;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: #00000040 0px 54px 55px, #0000001f 0px -12px 30px, #0000001f 0px 4px 6px, #0000002b 0px 12px 13px, #00000017 0px -3px 5px;
+  background-image: linear-gradient(to right bottom, #2c3138, #282c33, #23282e, #1f2329, #1b1f24);
+  overflow: auto; }
+  .contenido .carousel__contenido__info .reflexiones__contenido__info__p {
+    font-size: 1.7rem;
+    color: #ffffffbe; }
+  .contenido .carousel__contenido__info .img__carousel {
+    border: 1px solid #cccccc88;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 3px 5px 0px #000000bf;
+    -moz-box-shadow: 3px 3px 5px 0px #000000bf;
+    box-shadow: 3px 3px 5px 0px #000000bf;
+    max-width: 100%;
+    object-fit: fill; }
+  .contenido .carousel__contenido__info .mensaje_contenido {
+    border: 1px solid #cccccc88;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: #1b1f24ab;
+    -webkit-box-shadow: 3px 3px 5px 0px #000000bf;
+    -moz-box-shadow: 3px 3px 5px 0px #000000bf;
+    box-shadow: 3px 3px 5px 0px #000000bf;
+    line-height: 7vh; }
+
+/*Media Queries*/
+@media screen and (max-width: 992px) {
+  .contenido .carousel__contenido__info {
+    width: 90%;
+    height: 60vh; }
+    .contenido .carousel__contenido__info .mensaje .mensaje_contenido {
+      font-size: 0.9rem;
+      line-height: 1rem; } }
 
 /*Clases del <main> de toolkit.html*/
 .contenido .contenido__info .toolkit__contenido__info__p, .contenido .contenido__links .toolkit__contenido__info__p {

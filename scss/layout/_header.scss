@@ -2,12 +2,14 @@
 .cabecera{
     @include estilo-cabecera (map-get($widths,cabecera),$header-b-color,$text-color);  
     @include sombra (-header);
+    line-height: map-get($heights,titulo);
     .cabecera__titulo{
         @include estilo-cabecera (map-get($widths,w-60vw),$header-sec-b-color,0);  
         @include borde ();
         font-style: $italic-style; 
         height: map-get($heights,cabecera-titulo);
         box-shadow: $sombreado-titulo;
+        
     }
     .cabecera__logo{
         @include logo ();
@@ -34,8 +36,9 @@
         margin-top: map-get($margins,top-10);
     }
     .cabecera{
+        line-height: map-get($heights,titulo-mq);
         .cabecera__titulo{
-            font-size: $fuente-peq;
+            font-size: $fuente-tit;
         }
     }
 }

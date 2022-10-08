@@ -1,5 +1,6 @@
 /*texto*/
 $fuente-peq: 0.9rem;
+$fuente-tit: 0.98rem;
 $fuente-med: 1.1rem;
 $fuente-gde: 1.7rem;
 $italic-style: italic;
@@ -15,6 +16,8 @@ $border-color: #cccccc88;
 $botones-b-color: #262627c3;
 $sombreado-color:#000000bf;
 $background-gradient: linear-gradient(to right bottom, #2c3138, #282c33, #23282e, #1f2329, #1b1f24);
+$mensaje-color: #ffffff;
+$mensaje-bg-color: #1b1f24ab;
 /*bordes*/
 $border-style: 1px solid $border-color;
 $round-border-radius: 10px;
@@ -28,12 +31,15 @@ $sombreado-footer: 0px -3px 5px 0px $sombreado-color;
 $sombreado-scrollbar: inset 0 0 5px $header-sec-b-color; 
 /*mapas*/
 $heights:(
+    titulo: 3.5vh,
+    titulo-mq: 4.5vh,
     cabecera-titulo: 7vh,
-    logo: 40px,
-    
+    logo: 40px,  
+    h-60vh: 60vh,
 );
 $widths:(
     cabecera: 100%,
+    w-55vw: 55vw,
     w-60vw: 60vw,
     logo: 40px,
     contenido-info: 35vw,
@@ -43,6 +49,7 @@ $widths:(
     pie-info-disclaimer: 80vw,
     pie-links-img: 1.3vw,
     pie-links-img-mq: 8vw,
+    carousel:90%,
 );
 $margins:(
     0:0,

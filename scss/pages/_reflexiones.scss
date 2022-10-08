@@ -1,0 +1,43 @@
+.contenido{
+    .carousel__contenido__info{
+        width: map-get($widths,w-55vw);
+        @include borde ();
+        @include sombra (-main);
+        @include centrado ();
+        box-shadow: $sombreado-main-gradient;
+        background-image: $background-gradient;
+        overflow: auto;
+        .reflexiones__contenido__info__p{
+        font-size: $fuente-gde;
+        color: $text-color;
+        };
+        .img__carousel{
+            @include borde ();
+            @include sombra (-main);
+            max-width: 100%;
+            object-fit: fill;
+        }; 
+        .mensaje_contenido{
+            @include borde ();
+            color: $mensaje-color;
+            background-color: $mensaje-bg-color;
+            @include sombra (-main);
+            line-height: map-get($heights,cabecera-titulo);
+        }
+    }
+}
+/*Media Queries*/
+@media screen and (max-width: 992px) {
+    .contenido{
+        .carousel__contenido__info{
+            width: map-get($widths,carousel);
+            height: map-get($heights,h-60vh);
+            .mensaje{
+                .mensaje_contenido{
+                    font-size: $fuente-peq;
+                    line-height: 1rem;
+                }
+            }
+        }
+    }
+}

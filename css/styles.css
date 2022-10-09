@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*texto*/
 /*colores*/
 /*bordes*/
@@ -253,7 +254,7 @@ label {
 
 @media screen and (max-width: 992px) {
   .gato {
-    width: 250px; } }
+    width: 300px; } }
 
 /*Clases del <main> de quiensoy.html*/
 .contenido .contenido__info .quiensoy__contenido__info__p, .contenido .contenido__links .quiensoy__contenido__info__p {
@@ -262,7 +263,7 @@ label {
   color: #ffffffbe; }
 
 .contenido .carousel__contenido__info {
-  width: 55vw;
+  width: 50vw;
   border: 1px solid #cccccc88;
   border-radius: 10px;
   -webkit-box-shadow: 3px 3px 5px 0px #000000bf;
@@ -284,6 +285,8 @@ label {
     box-shadow: 3px 3px 5px 0px #000000bf;
     max-width: 100%;
     object-fit: fill; }
+    .contenido .carousel__contenido__info .img__carousel:hover {
+      opacity: 1; }
   .contenido .carousel__contenido__info .mensaje_contenido {
     border: 1px solid #cccccc88;
     border-radius: 10px;
@@ -294,12 +297,56 @@ label {
     box-shadow: 3px 3px 5px 0px #000000bf;
     line-height: 7vh; }
 
+/*Hover de la galería*/
+.carousel-hover img {
+  max-width: none;
+  width: -webkit-calc(100% + 50px);
+  width: calc(100% + 50px);
+  opacity: 0.5;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-40px, 0, 0);
+  transform: translate3d(-40px, 0, 0); }
+
+.carousel-hover figcaption {
+  text-align: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2em;
+  width: 100%;
+  height: 50%; }
+
+.carousel-hover h2, .carousel-hover p {
+  -webkit-transform: translate3d(0, 40px, 0);
+  transform: translate3d(0, 40px, 0); }
+
+.carousel-hover h2 {
+  color: #ffffffbe;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s; }
+
+.carousel-hover p {
+  color: #000000;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
+  transition: opacity 0.2s, transform 0.35s; }
+
+.carousel-hover:hover img, .carousel-hover:hover h2, .carousel-hover:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+  -webkit-transition-duration: 0.35s;
+  transition-duration: 0.35s; }
+
 /*Media Queries*/
 @media screen and (max-width: 992px) {
   .contenido .carousel__contenido__info {
     width: 90%;
     height: 60vh; }
-    .contenido .carousel__contenido__info .mensaje .mensaje_contenido {
+    .contenido .carousel__contenido__info .mensaje_contenido {
       font-size: 0.9rem;
       line-height: 1rem; } }
 

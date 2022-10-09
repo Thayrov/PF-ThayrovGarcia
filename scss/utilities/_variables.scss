@@ -8,6 +8,7 @@ $text-center: center;
 $text-left: left;
 /*colores*/
 $text-color:#ffffffbe;
+$text-color2:#000000;
 $links-color:#a8fbfb;
 $background-color: #1B1F24;
 $header-b-color: #363636;
@@ -39,7 +40,7 @@ $heights:(
 );
 $widths:(
     cabecera: 100%,
-    w-55vw: 55vw,
+    w-55vw: 50vw,
     w-60vw: 60vw,
     logo: 40px,
     contenido-info: 35vw,

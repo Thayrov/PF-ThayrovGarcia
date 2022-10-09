@@ -2,10 +2,30 @@
 .contenido{
     .contenido__info{
         .toolkit__contenido__info__p{
-            font-size: $fuente-med;
+            font-size: $fuente-gde;
+            color: $text-color;
             padding: map-get($paddings,p-2vw);
             margin: map-get($margins,0);
-            color: $text-color;
+        }
+        .tool{
+            @include borde ();
+            @include sombra (-main);
+            border-radius: 50px;
+            background: linear-gradient(145deg, #181c20, #1d2127);
+            box-shadow:  20px 20px 60px #171a1f,-20px -20px 60px #1f2429;
+            &_text{
+                font-size: $fuente-peq;
+                color: $text-color;
+            }
+        } 
+    }
+}
+/*Media Queries*/
+@media screen and (max-width: 992px) {
+    .contenido{
+        .contenido__info{
+            width: map-get($widths,carousel);
+            height: map-get($heights,h-75vh);
         }
     }
 }

@@ -1,6 +1,7 @@
 /*Clases del <main> de toolkit.html*/
 .contenido{
-    .contenido__info{
+    .toolkit__contenido__info{
+        @extend .contenido__info;
         .toolkit__contenido__info__p{
             font-size: $fuente-gde;
             color: $text-color;
@@ -23,7 +24,7 @@
 /*Media Queries*/
 @media screen and (max-width: 992px) {
     .contenido{
-        .contenido__info{
+        .toolkit__contenido__info{
             width: map-get($widths,carousel);
             height: map-get($heights,h-75vh);
         }

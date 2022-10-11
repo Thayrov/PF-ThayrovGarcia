@@ -1,7 +1,7 @@
 /*texto*/
 $fuente-peq: 0.9rem;
 $fuente-tit: 0.98rem;
-$fuente-med: 1.1rem;
+$fuente-med: 1rem;
 $fuente-gde: 1.7rem;
 $italic-style: italic;
 $text-center: center;
@@ -44,10 +44,12 @@ $widths:(
     cabecera: 100%,
     w-55vw: 50vw,
     w-60vw: 60vw,
+    w-80vw: 80vw,
     logo: 40px,
     contenido-info: 35vw,
     contenido-links-li: 20vw,
     max-width-30vw: 30vw,
+    max-width-80vw: 80vw,
     contenido-info-mq: 80%,
     pie-info-disclaimer: 80vw,
     pie-links-img: 1.3vw,

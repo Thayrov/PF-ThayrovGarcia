@@ -162,19 +162,19 @@ body {
     background-image: linear-gradient(to right bottom, #2c3138, #282c33, #23282e, #1f2329, #1b1f24);
     overflow: auto; }
     .contenido .contenido__info .contenido__info__p, .contenido .contenido__links .contenido__info__p, .contenido .toolkit__contenido__info .contenido__info__p {
-      font-size: 1.1rem;
+      font-size: 1rem;
       padding: 6vw;
       color: #ffffffbe; }
       .contenido .contenido__info .contenido__info__p .contenido__links__a, .contenido .contenido__links .contenido__info__p .contenido__links__a, .contenido .toolkit__contenido__info .contenido__info__p .contenido__links__a {
         color: #a8fbfb;
-        font-size: 1.1rem;
+        font-size: 1rem;
         text-decoration: none; }
   .contenido .contenido__links {
     list-style: none;
     flex-direction: column; }
     .contenido .contenido__links .contenido__links__a {
       color: #ffffffbe;
-      font-size: 1.1rem;
+      font-size: 1rem;
       text-decoration: none; }
       .contenido .contenido__links .contenido__links__a .contenido__links__li {
         width: 20vw;
@@ -206,11 +206,12 @@ body {
       margin-right: auto;
       width: 80%; }
       .contenido .contenido__links .contenido__links__a .contenido__links__li {
-        width: 60vw; } }
+        width: 80%;
+        max-width: 80vw; } }
 
 /*Clases del <main> de apuntes.html*/
 .contenido .contenido__info .apuntes__contenido__info__p, .contenido .contenido__links .apuntes__contenido__info__p, .contenido .toolkit__contenido__info .apuntes__contenido__info__p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   padding: 2vw;
   margin: 0;
   color: #ffffffbe; }
@@ -221,7 +222,7 @@ body {
   margin-left: auto;
   margin-right: auto; }
   .contenido .contenido__info .contacto__contenido__info__p, .contenido .contenido__links .contacto__contenido__info__p, .contenido .toolkit__contenido__info .contacto__contenido__info__p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding: 2vw;
     color: #ffffffbe; }
   .contenido .contenido__info .h1, .contenido .contenido__links .h1, .contenido .toolkit__contenido__info .h1 {
@@ -267,7 +268,7 @@ label {
 
 .e404 {
   color: #ffffffbe;
-  font-size: 1.1rem; }
+  font-size: 1rem; }
 
 .gato_container {
   height: 45vh; }

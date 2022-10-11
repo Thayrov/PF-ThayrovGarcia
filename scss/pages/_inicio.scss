@@ -59,7 +59,8 @@
             width: map-get($widths,contenido-info-mq);
             .contenido__links__a{
                 .contenido__links__li{
-                    width: map-get($widths,w-60vw);
+                    width: map-get($widths,contenido-info-mq);
+                    max-width: map-get($widths,max-width-80vw);
                 }
             }
         }

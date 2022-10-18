@@ -76,22 +76,27 @@
             </div> 
             <div class="col-lg-5 col-12">
                 <p class="contacto__contenido__info__p">Si deseas escribirme, siéntete libre de hacerlo, por favor deja tus datos:</p>
-                <form class="px-5" action="">
+                <form class="px-5" action="https://formsubmit.co/thayrovg@gmail.com" method="POST">
                     <div class="form-floating">
-                        <input type="text" class="form-control" id="floatingName" placeholder="Nombre">
-                        <label for="floatingName">nombre</label>
+                        <input name="Nombre" type="text" class="form-control" id="form_nombre" placeholder="Nombre" required="required" oninvalid="this.setCustomValidity('Ingresa tu nombre o un seudónimo')"
+                        oninput="this.setCustomValidity('')">
+                        <label for="form_nombre">nombre</label>
                     </div>
                     <div class="form-floating">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="nombre@ejemplo.com">
-                        <label for="floatingInput">e_mail</label>
+                        <input name="e-mail" type="email" class="form-control" id="form_email" placeholder="nombre@ejemplo.com" required oninvalid="this.setCustomValidity('Ingresa tu correo')"
+                        oninput="this.setCustomValidity('')">
+                        <label for="form_email">e_mail</label>
                     </div>
                     <div class="form-floating">
-                        <textarea name="Mensaje" class="form-control" id="floatingText" placeholder="Ingresa tu mensaje" cols="30" rows="10"></textarea>
-                        <label for="floatingText">ingresa_tu_mensaje</label>
+                        <textarea name="Mensaje" class="form-control" id="form_texto" placeholder="Ingresa tu mensaje" cols="30" rows="10" required oninvalid="this.setCustomValidity('Ingresa tu mensaje')"
+                        oninput="this.setCustomValidity('')"></textarea>
+                        <label for="form_texto">ingresa_tu_mensaje</label>
                     </div>
                     <div>
                         <button class="w-100 btn btn-lg btn-secondary my-3 cabecera__nav__a fs-6" type="submit">envía_tu_mensaje</button>
                     </div>
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_next" value="https://thayrov.github.io/PF-ThayrovGarcia/pages/gracias.html">
                 </form>
             </div>
         </section></code>

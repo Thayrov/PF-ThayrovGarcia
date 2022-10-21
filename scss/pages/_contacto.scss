@@ -8,6 +8,13 @@
             padding: map-get($paddings,p-2vw);
             color: $text-color;
         }
+        .mapa{
+            @include borde ();
+            @include sombra ($sombreado-main-gradient); 
+            &:hover {
+                @include sombra (-botones);   
+            }
+        }
         .h1{
             font-size: $fuente-gde;
         }

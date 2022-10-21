@@ -17,8 +17,13 @@
             &_text{
                 font-size: $fuente-peq;
                 color: $text-color;
-            }
-        } 
+                .tool_btn {
+                    &:hover {
+                        @include sombra (-botones);  
+                    }
+                }
+            } 
+        }
     }
 }
 /*Media Queries*/

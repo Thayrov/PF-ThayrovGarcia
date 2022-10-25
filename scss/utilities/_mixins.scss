@@ -1,4 +1,4 @@
-@mixin body ($bgc:$background-color,$pt:map-get($paddings,top-6r),$pb:map-get($paddings,bottom-6r)) {
+@mixin body ($bgc:$background-color,$pt:map-get($paddings,top-6r),$pb:map-get($paddings,bottom-10r)) {
     background-color: $bgc;
     padding-top: $pt;
     padding-bottom: $pb;

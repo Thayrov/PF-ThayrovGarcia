@@ -12,7 +12,7 @@
 body {
   background-color: #1B1F24;
   padding-top: 6rem;
-  padding-bottom: 6rem; }
+  padding-bottom: 10rem; }
 
 /*Clases del <header>*/
 .cabecera {
@@ -114,6 +114,8 @@ body {
 
 /*Media Queries*/
 @media screen and (max-width: 768px) {
+  .pie .pie__logo {
+    display: none; }
   .pie .pie__info {
     margin-top: 8px; }
     .pie .pie__info .pie__info__disclaimer {

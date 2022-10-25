@@ -8,7 +8,6 @@
     .pie__info{
         background-color: $header-sec-b-color;
         @include borde ();
-
         box-shadow: $sombreado-titulo;
         .pie__info__disclaimer{
             width: map-get($widths,pie-info-disclaimer);
@@ -33,7 +32,10 @@
 }
 /*Media Queries*/
 @media screen and (max-width:768px){
-    .pie{ 
+    .pie{
+        .pie__logo{
+            display: none;
+        } 
         .pie__info{
             margin-top: map-get($margins,top-8);
             .pie__info__disclaimer{

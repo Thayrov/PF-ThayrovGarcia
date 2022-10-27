@@ -1,7 +1,10 @@
-@mixin body ($bgc:$background-color,$pt:map-get($paddings,top-6r),$pb:map-get($paddings,bottom-10r)) {
+@mixin body ($bgc:$background-color,$pt:map-get($paddings,top-6r),$pb:map-get($paddings,bottom-6r)) {
     background-color: $bgc;
     padding-top: $pt;
     padding-bottom: $pb;
+    @media screen and (max-width:768px){
+    padding-bottom: map-get($paddings,bottom-10r);
+    }
 }
 @mixin estilo-cabecera ($width, $b-ground, $color) {
     width: $width;

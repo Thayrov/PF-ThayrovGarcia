@@ -1,100 +1,196 @@
 <!DOCTYPE html>
 <html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="En esta página podrás ver todas mis apuntes tomados durante mi proceso de aprendizaje de desarrollo web y próximamente de otros cursos que vaya tomando" />
+		<meta name="keywords" content="HTML, programación, CSS, JS, apuntes" />
+		<title>Apuntes</title>
+		<link rel="icon" href="../favicon.ico" />
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+		<link rel="stylesheet" href="../css/styles.css" />
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="En esta página podrás ver todas mis apuntes tomados durante mi proceso de aprendizaje de desarrollo web y próximamente de otros cursos que vaya tomando">
-    <meta name="keywords" content="HTML, programación, CSS, JS, apuntes">
-    <title>Apuntes</title>
-    <link rel="icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="../css/styles.css">
-</head>
+	<body>
+		<div class="container">
+			<header>
+				<nav class="navbar navbar-expand-md navbar-dark fixed-top cabecera">
+					<div class="container-fluid">
+						<a href="../index.html">
+							<img
+								class="cabecera__logo mx-1"
+								src="../images/w_logo.png"
+								alt="Logo en forma de bloc de notas"
+						/></a>
+						<a
+							class="navbar-brand cabecera__titulo pt-2 px-3 animate__animated animate__flipInX"
+							href="../index.html">
+							<code
+								><p class="animacion__titulo">
+									mis_apuntes_de_programación
+								</p></code
+							></a
+						>
+						<button
+							class="navbar-toggler"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#navbarCollapse"
+							aria-controls="navbarCollapse"
+							aria-expanded="false"
+							aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarCollapse">
+							<ul class="navbar-nav me-auto mb-2 mb-md-0  ms-auto ">
+								<li
+									class="nav-item cabecera__nav__a cabecera__nav__a__home mx-1">
+									<a class="nav-link" aria-current="page" href="../index.html"
+										><code>inicio</code></a
+									>
+								</li>
+								<li class="nav-item cabecera__nav__a mx-1">
+									<a class="nav-link active" href="#"><code>apuntes</code></a>
+								</li>
+								<li class="nav-item cabecera__nav__a mx-1">
+									<a class="nav-link" href="./toolkit.html"
+										><code>toolkit</code></a
+									>
+								</li>
+								<li class="nav-item cabecera__nav__a mx-1">
+									<a class="nav-link" href="./reflexiones.html"
+										><code>reflexiones</code></a
+									>
+								</li>
+								<li class="nav-item cabecera__nav__a mx-1">
+									<a class="nav-link" href="./quiensoy.html"
+										><code>¿quién_soy</code>?</a
+									>
+								</li>
+								<li class="nav-item cabecera__nav__a mx-1">
+									<a class="nav-link" href="./contacto.html"
+										><code>contacto</code></a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</header>
+			<!--En este main se podrá seleccionar el contenido de los apuntes-->
+			<main class="row justify-content-evenly contenido">
+				<section class="col contenido__info my-5 mx-auto mx-lg-5">
+					<code
+						><h1
+							class="apuntes__contenido__info__p animate__animated animate__fadeIn">
+							mis_apuntes
+						</h1>
+						<p
+							class="apuntes__contenido__info__p animate__animated animate__fadeIn">
+							En esta sección podrás encontrar todos los apuntes que tomé
+							durante mis clases de la carrera de Desarrollo Web Full Stack.
+						</p>
+						<p
+							class="apuntes__contenido__info__p animate__animated animate__fadeIn">
+							A continuación puedes elegir el curso que sea de tu interés:
+						</p></code
+					>
+				</section>
+				<section class="col contenido__links my-5 mx-auto mx-lg-5">
+					<ul class="navbar-nav py-5 animate__animated animate__fadeIn">
+						<code
+							><a class="contenido__links__a" href="apuntesDesarrolloWeb.html"
+								><li class="my-2 py-2 contenido__links__li">
+									desarrollo_web
+								</li></a
+							></code
+						>
+						<code
+							><a class="contenido__links__a" href="error404.html"
+								><li class="my-2 py-2 contenido__links__li">javaScript</li></a
+							></code
+						>
+						<code
+							><a class="contenido__links__a" href="error404.html"
+								><li class="my-2 py-2 contenido__links__li">react_js</li></a
+							></code
+						>
+						<code
+							><a class="contenido__links__a" href="error404.html"
+								><li class="my-2 py-2 contenido__links__li">backend</li></a
+							></code
+						>
+					</ul>
+				</section>
+			</main>
 
-<body>
-    <div class="container">
-        <header>
-            <nav class="navbar navbar-expand-md navbar-dark fixed-top cabecera">
-                <div class="container-fluid">
-                    <a href="../index.html">
-                        <img class="cabecera__logo mx-1" src="../images/w_logo.png" alt="Logo en forma de bloc de notas"></a>
-                    <a class="navbar-brand cabecera__titulo pt-2 px-3 animate__animated animate__flipInX" href="../index.html">
-                        <code><p class="animacion__titulo"> mis_apuntes_de_programación</p></code></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <ul class="navbar-nav me-auto mb-2 mb-md-0  ms-auto ">
-                            <li class="nav-item cabecera__nav__a cabecera__nav__a__home mx-1">
-                                <a class="nav-link" aria-current="page" href="../index.html"><code>inicio</code></a>
-                            </li>
-                            <li class="nav-item cabecera__nav__a mx-1">
-                                <a class="nav-link active" href="#"><code>apuntes</code></a>
-                            </li>
-                            <li class="nav-item cabecera__nav__a mx-1">
-                                <a class="nav-link" href="./toolkit.html"><code>toolkit</code></a>
-                            </li>
-                            <li class="nav-item cabecera__nav__a mx-1">
-                                <a class="nav-link" href="./reflexiones.html"><code>reflexiones</code></a>
-                            </li>
-                            <li class="nav-item cabecera__nav__a mx-1">
-                                <a class="nav-link" href="./quiensoy.html"><code>¿quién_soy</code>?</a>
-                            </li>
-                            <li class="nav-item cabecera__nav__a mx-1">
-                                <a class="nav-link" href="./contacto.html"><code>contacto</code></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
-<!--En este main se podrá seleccionar el contenido de los apuntes-->
-        <main class="row justify-content-evenly contenido">
-            <section class="col contenido__info my-5 mx-auto mx-lg-5">
-                <code><h1 class="apuntes__contenido__info__p animate__animated animate__fadeIn">mis_apuntes</h1>
-                <p class="apuntes__contenido__info__p animate__animated animate__fadeIn">En esta sección podrás encontrar todos los apuntes que tomé durante mis clases de la carrera de Desarrollo Web Full Stack.</p>
-                <p class="apuntes__contenido__info__p animate__animated animate__fadeIn">A continuación puedes elegir el curso que sea de tu interés:</p></code>
-            </section>
-            <section class="col contenido__links my-5 mx-auto mx-lg-5">
-                <ul class="navbar-nav py-5 animate__animated animate__fadeIn">
-                    <code><a class="contenido__links__a" href="error404.html"><li class="my-2 py-2 contenido__links__li">desarrollo_web</li></a></code>                     
-                    <code><a class="contenido__links__a" href="error404.html"><li class="my-2 py-2 contenido__links__li">javaScript</li></a></code>
-                    <code><a class="contenido__links__a" href="error404.html"><li class="my-2 py-2 contenido__links__li">react_js</li></a></code>
-                    <code><a class="contenido__links__a" href="error404.html"><li class="my-2 py-2 contenido__links__li">backend</li></a></code>
-                </ul>
-            </section>
-        </main>   
-        
-        <footer>
-            <nav class="navbar navbar-expand-md navbar-dark fixed-bottom pie">
-                <div class="container-fluid">                    
-                    <img class="pie__logo mx-1" src="../images/spock_icon.png" alt="Spock te saluda">
-                    <div class="navbar-collapse pie__info">
-                        <a class="navbar-brand pie__info__disclaimer pb-2 px-3" href="./contacto.html"><code>proyecto_académico_sin_fines_de_lucro,_para_aclaraciones_contáctame_por_mis_redes:</code></a>
-                        <a class="navbar-brand pie__info__disclaimer_sm pb-2 px-3 me-auto ms-auto" href="./contacto.html"><code>contáctame,_estas_son_mis_redes:</code></a>
-                        <ul class="navbar-nav me-auto mb-2 mb-md-0 ms-auto pie__links">
-                            <li class="nav-item mx-1">
-                                <a href="https://www.linkedin.com/in/thayrov-garc%C3%ADa-tovar-01a18757/" target="_blank"><img class="pie__links_img" src="../images/linkedin_icon.png" alt="Logo de LinkedIn"></a>
-                            </li>
-                            <li class="nav-item mx-1">
-                                <a href="https://github.com/Thayrov" target="_blank"><img class="pie__links_img" src="../images/github_icon.png" alt="Logo de Github"></a>
-                            </li>                            
-                            <li class="nav-item mx-1">
-                                <a href="https://www.facebook.com/thayrovg" target="_blank"><img class="pie__links_img" src="../images/facebook_icon.png" alt="Logo de Facebook"></a>
-                            </li>
-                            <li class="nav-item mx-1">
-                                <a href="https://twitter.com/ThayrovG" target="_blank"><img class="pie__links_img" src="../images/twitter_icon.png" alt="Logo de Twitter"></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </footer>
-    </div>
-    <script src="../scripts/bootstrap.bundle.min.js"></script>
-</body>
-
+			<footer>
+				<nav class="navbar navbar-expand-md navbar-dark fixed-bottom pie">
+					<div class="container-fluid">
+						<img
+							class="pie__logo mx-1"
+							src="../images/spock_icon.png"
+							alt="Spock te saluda" />
+						<div class="navbar-collapse pie__info">
+							<a
+								class="navbar-brand pie__info__disclaimer pb-2 px-3"
+								href="./contacto.html"
+								><code
+									>proyecto_académico_sin_fines_de_lucro,_para_aclaraciones_contáctame_por_mis_redes:</code
+								></a
+							>
+							<a
+								class="navbar-brand pie__info__disclaimer_sm pb-2 px-3 me-auto ms-auto"
+								href="./contacto.html"
+								><code>contáctame,_estas_son_mis_redes:</code></a
+							>
+							<ul class="navbar-nav me-auto mb-2 mb-md-0 ms-auto pie__links">
+								<li class="nav-item mx-1">
+									<a
+										href="https://www.linkedin.com/in/thayrov-garc%C3%ADa-tovar-01a18757/"
+										target="_blank"
+										><img
+											class="pie__links_img"
+											src="../images/linkedin_icon.png"
+											alt="Logo de LinkedIn"
+									/></a>
+								</li>
+								<li class="nav-item mx-1">
+									<a href="https://github.com/Thayrov" target="_blank"
+										><img
+											class="pie__links_img"
+											src="../images/github_icon.png"
+											alt="Logo de Github"
+									/></a>
+								</li>
+								<li class="nav-item mx-1">
+									<a href="https://www.facebook.com/thayrovg" target="_blank"
+										><img
+											class="pie__links_img"
+											src="../images/facebook_icon.png"
+											alt="Logo de Facebook"
+									/></a>
+								</li>
+								<li class="nav-item mx-1">
+									<a href="https://twitter.com/ThayrovG" target="_blank"
+										><img
+											class="pie__links_img"
+											src="../images/twitter_icon.png"
+											alt="Logo de Twitter"
+									/></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</footer>
+		</div>
+		<script src="../scripts/bootstrap.bundle.min.js"></script>
+	</body>
 </html>

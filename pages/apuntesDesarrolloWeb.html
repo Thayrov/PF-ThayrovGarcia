@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="keywords" content="HTML, Programación, CSS" />
+		<meta
+			name="description"
+			content="En esta página podrás ver mis apuntes de desarrollo web" />
+		<title>Desarrollo Web</title>
+		<link rel="icon" href="../favicon.ico" />
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+		<link rel="stylesheet" href="../css/styles.css" />
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<nav class="navbar navbar-expand-md navbar-dark fixed-top cabecera">
+					<div class="container-fluid">
+						<a href="../index.html">
+							<img
+								class="cabecera__logo mx-1"
+								src="../images/w_logo.png"
+								alt="Logo en forma de bloc de notas"
+						/></a>
+						<a
+							class="navbar-brand cabecera__titulo pt-2 px-3 animate__animated animate__flipInX"
+							href="../index.html">
+							<code
+								><p class="animacion__titulo">
+									mis_apuntes_de_programación
+								</p></code
+							></a
+						>
+						<button
+							class="navbar-toggler"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#navbarCollapse"
+							aria-controls="navbarCollapse"
+							aria-expanded="false"
+							aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarCollapse">
+							<ul class="navbar-nav me-auto mb-2 mb-md-0  ms-auto">
+								<li
+									class="nav-item cabecera__nav__a cabecera__nav__a__home mx-1">
+									<a class="nav-link" aria-current="page" href="../index.html"
+										><code>inicio</code></a
+									>
+								</li>
+								<li class="nav-item cabecera__nav__a mx-1">
+									<a class="nav-link active" href="./toolkit.html"
+										><code>apuntes</code></a
+									>
+								</li>
+								<li class="nav-item cabecera__nav__a mx-1">
+									<a class="nav-link " href="#"><code>toolkit</code></a>
+								</li>
+								<li class="nav-item cabecera__nav__a mx-1">
+									<a class="nav-link" href="./reflexiones.html"
+										><code>reflexiones</code></a
+									>
+								</li>
+								<li class="nav-item cabecera__nav__a mx-1">
+									<a class="nav-link" href="./quiensoy.html"
+										><code>¿quién_soy</code>?</a
+									>
+								</li>
+								<li class="nav-item cabecera__nav__a mx-1">
+									<a class="nav-link" href="./contacto.html"
+										><code>contacto</code></a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</header>
+			<!--En este main se podrán explorar distintas herramientas de programación-->
+			<main class="contenido animate__animated animate__fadeIn">
+				<section class="toolkit__contenido__info">
+					<code
+						><h1 class="toolkit__contenido__info__p pt-5 pt-lg-3">
+							Apuntes de Desarrollo Web
+						</h1>
+						<br />
+						<p class="toolkit__contenido__info__p px-5 py-0 fs-5">
+							Aquí te comparto mis apuntes para mi curso de Desarrollo Web.
+						</p></code
+					>
+					<hr />
+					<div class="text-start text-light mx-5 my-5">
+						<h1 id="clase-01-parte-i-introducci-n-al-desarrollo-web">
+							Clase 01 - Parte I: Introducción al Desarrollo Web
+						</h1>
+						<hr />
+						<hr />
+						<br />
+						<h2 id="-qu-es-el-dise-o-web-">¿Qué es el Diseño Web?</h2>
+						<br />
+						<h3 id="definici-n">Definición</h3>
+						<p>Según Marie Quilly (2014):</p>
+						<blockquote>
+							<p>
+								&quot;Es la planificación y el diseño de páginas de internet con
+								la interacción de medios como textos, imágenes, vídeos, sonido y
+								enlaces a otras páginas web&quot;.
+							</p>
+						</blockquote>
+						<br />
+						<h3 id="objetivos-y-metodolog-a">Objetivos y Metodología</h3>
+						<p>
+							El diseño web se realiza para cumplir con un objetivo específico,
+							como dar a conocer un producto o servicio. La información se
+							presenta de una manera interactiva, amena y accesible.
+						</p>
+						<br />
+						<h3 id="estructura-del-dise-o-web">Estructura del Diseño Web</h3>
+						<p>Quilly destaca tres conceptos clave en el diseño web:</p>
+						<ol>
+							<li>
+								<strong>Navegabilidad</strong>: Dirección y métodos para moverse
+								de una página a otra.
+							</li>
+							<li>
+								<strong>Interactividad</strong>: Transición entre medios y
+								aplicaciones.
+							</li>
+							<li>
+								<strong>Arquitectura de la Información</strong>: Organización de
+								la información.
+							</li>
+						</ol>
+						<br />
+						<h3 id="adaptabilidad">Adaptabilidad</h3>
+						<p>
+							El diseño debe ser adaptable para que funcione en cualquier
+							dispositivo.
+						</p>
+						<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- Ejemplo de código HTML adaptable --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span>
+</code></pre>
+						<br />
+						<hr />
+						<br />
+
+						<h2 id="herramientas-b-sicas-para-el-dise-o-y-desarrollo-web">
+							Herramientas Básicas para el Diseño y Desarrollo Web
+						</h2>
+						<br />
+
+						<h3 id="lenguajes-para-el-desarrollo-web">
+							Lenguajes para el Desarrollo Web
+						</h3>
+						<p>
+							Se utilizan varios lenguajes, pero en este curso se cubrirán
+							principalmente HTML y CSS.
+						</p>
+						<br />
+
+						<h3 id="-qu-es-el-html-">¿Qué es el HTML?</h3>
+						<p>
+							HTML es un lenguaje de marcado que se utiliza para estructurar
+							contenido en la web. Se encarga solo de la estructura, no del
+							diseño, que es tarea de CSS.
+						</p>
+						<ul>
+							<li>
+								<strong>Etiqueta</strong>: Palabra que etiqueta algo como un
+								bloque de texto o imagen.
+							</li>
+							<li>
+								<strong>Atributo</strong>: Característica especial que se asigna
+								a una etiqueta.
+							</li>
+							<li>
+								<strong>Estructura</strong>: Organización del lenguaje HTML.
+							</li>
+						</ul>
+						<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- Ejemplo de código HTML --&gt;</span>
+<span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Mi Página<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hola Mundo<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+						<br />
+
+						<h3 id="-qu-es-el-css-">¿Qué es el CSS?</h3>
+						<p>CSS es el lenguaje de diseño gráfico para la web.</p>
+						<ul>
+							<li><strong>Estilo</strong>: Atributos asignados al HTML.</li>
+							<li>
+								<strong>Reglas</strong>: Características que deben cumplir las
+								sentencias.
+							</li>
+							<li>
+								<strong>Medidas</strong>: Valores asignados a cada atributo.
+							</li>
+							<li><strong>Fuente</strong>: Tipos de letras.</li>
+						</ul>
+						<pre><code class="lang-css"><span class="hljs-comment">/* Ejemplo de código CSS */</span>
+<span class="hljs-selector-tag">body</span> {
+  <span class="hljs-attribute">font-family</span>: Arial, sans-serif;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
+}
+</code></pre>
+						<br />
+
+						<h3 id="-qu-es-un-lenguaje-de-programaci-n-">
+							¿Qué es un lenguaje de programación?
+						</h3>
+						<p>
+							Un lenguaje de programación es un sistema estructurado que permite
+							procesar datos en información, basados en algoritmos. Ejemplos son
+							PHP, JavaScript y Python.
+						</p>
+						<br />
+						<hr />
+						<br />
+
+						<h2 id="conceptos-b-sicos-sobre-internet">
+							Conceptos Básicos sobre Internet
+						</h2>
+						<br />
+
+						<h3 id="internet">Internet</h3>
+						<p>
+							Es una red global de computadoras interconectadas para compartir
+							información.
+						</p>
+						<br />
+
+						<h3 id="navegador-web">Navegador Web</h3>
+						<p>
+							Software que permite a los usuarios navegar en la web. Ejemplos
+							incluyen Google Chrome, Firefox y Safari.
+						</p>
+						<br />
+
+						<h3 id="buscadores-web">Buscadores Web</h3>
+						<p>
+							Son programas que permiten buscar información en la web mediante
+							palabras clave.
+						</p>
+						<br />
+
+						<h3 id="-qu-es-un-sitio-web-">¿Qué es un Sitio Web?</h3>
+						<p>
+							Un sitio web es un conjunto de archivos y directorios almacenados
+							en un servidor web.
+						</p>
+						<br />
+
+						<h3 id="diferencia-entre-una-p-gina-web-y-un-sitio-web">
+							Diferencia entre una página web y un sitio web
+						</h3>
+						<ul>
+							<li>
+								<strong>Página web</strong>: Un único documento que se puede
+								mostrar en un navegador.
+							</li>
+							<li>
+								<strong>Sitio web</strong>: Colección de páginas web
+								interconectadas.
+							</li>
+						</ul>
+						<br />
+
+						<h3 id="el-modelo-cliente-servidor">El modelo cliente-servidor</h3>
+						<p>
+							Explica cómo se resuelve una petición de una página web en el
+							servidor.
+						</p>
+						<br />
+						<hr />
+						<br />
+
+						<h2 id="herramientas-a-utilizar">Herramientas a Utilizar</h2>
+						<br />
+
+						<h3 id="navegadores">Navegadores</h3>
+						<p>
+							Para probar la web se necesita más de un navegador. Los más
+							comunes son Google Chrome, Mozilla Firefox y Opera.
+						</p>
+						<br />
+
+						<h3 id="editor-de-texto">Editor de Texto</h3>
+						<p>
+							Programas como Sublime Text, VS Code o Atom permiten escribir
+							código fuente de proyectos.
+						</p>
+						<br />
+
+						<h3 id="terminal-o-consola">Terminal o Consola</h3>
+						<p>
+							Utilidad para interactuar con el computador a través de comandos.
+						</p>
+						<br />
+
+						<hr />
+						<hr />
+						<br />
+
+						<h1 id="clase-01-parte-ii-prototipado-y-conceptos-b-sicos-del-html">
+							Clase 01 - Parte II: Prototipado y conceptos básicos del HTML
+						</h1>
+						<br />
+
+						<p>
+							Para iniciar cualquier proyecto WEB es necesario tener un bosquejo
+							de lo que queremos hacer. De esta manera evitamos grandes cambios
+							en las siguientes etapas del proyecto. También nos permite definir
+							de una manera rápida y sencilla los bloques o secciones que va a
+							tener cada una de las páginas de un sitio web, de modo que podamos
+							jerarquizar la información y definir los bloques de contenido.
+						</p>
+						<br />
+
+						<h2 id="proceso-de-prototipado">Proceso de Prototipado</h2>
+						<p>Para iniciar este proceso tenemos varios pasos a seguir:</p>
+						<ul>
+							<li>Sketch</li>
+							<li>Wireframe</li>
+							<li>MockUp</li>
+							<li>Prototipo interactiva</li>
+							<li>Diseño final</li>
+						</ul>
+						<br />
+
+						<h3 id="sketch">Sketch</h3>
+						<p>
+							Un sketch es un dibujo rápido o bosquejo de guía general que no
+							tiene por qué tener muchos detalles y que reproduce un concepto,
+							idea o generalidad de un proyecto de una manera muy sencilla. Por
+							generalidad se realiza a mano con lápiz y borrador por su
+							facilidad en el momento de plasmar una base o punto de partida.
+						</p>
+						<br />
+
+						<h3 id="wireframe">Wireframe</h3>
+						<p>
+							Es una representación estática en baja calidad de un diseño. En
+							esta representación se definen, para una fácil comprensión:
+						</p>
+						<ul>
+							<li>
+								<strong>¿qué?</strong> Los principales grupos de contenido
+							</li>
+							<li><strong>¿dónde?</strong> La estructura de la información</li>
+							<li>
+								<strong>¿cómo?</strong> La descripción y visualización básica
+								del usuario – interacción de la interfaz
+							</li>
+						</ul>
+						<br />
+
+						<h3 id="mockup">Mockup</h3>
+						<p>
+							Representación estática de un diseño en calidad media o alta.
+							Representa la estructura de la información, visualiza el contenido
+							y demuestra las funcionalidades básicas de una manera estática.
+							Permite revisar la parte visual real del proyecto.
+						</p>
+						<p><strong>Entregable</strong>: Una imagen.</p>
+						<br />
+
+						<h3 id="prototipo">Prototipo</h3>
+						<p>
+							Representación navegable del producto final. Simula la interacción
+							interfaz-usuario y debe permitir que el usuario:
+						</p>
+						<ul>
+							<li>
+								Experimente interactuando con la interfaz y contenido del
+								proyecto.
+							</li>
+							<li>
+								Pruebe las principales interacciones de una manera similar al
+								producto final.
+							</li>
+						</ul>
+
+						<br />
+						<hr />
+						<br />
+
+						<h2 id="html">HTML</h2>
+						<br />
+
+						<p>
+							HTML es un &quot;lenguaje&quot; de marcado (de etiquetas) para
+							crear documentos para web. Permite indicar dónde queremos cada
+							elemento (párrafos, negritas, itálicas, imágenes, etc.).
+						</p>
+						<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>My Web Page<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hello, world!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+						<br />
+
+						<h3 id="evoluci-n-del-html">Evolución del HTML</h3>
+						<ul>
+							<li>HTML 1 y 2 (1991): Elementos de texto e imágenes.</li>
+							<li>HTML 3 (1995): Basado en Tablas. No había un estándar.</li>
+							<li>HTML 4 (1998): Aparece CSS, primer estándar oficial.</li>
+							<li>XHTML 1.0 (2000): Es de la W3C, basado en XML.</li>
+							<li>HTML5 (2004): Primer borrador creado por la WHATWG.</li>
+						</ul>
+						<br />
+
+						<h3 id="otros-lenguajes-para-hacer-sitios-web">
+							Otros lenguajes para hacer sitios web
+						</h3>
+						<ul>
+							<li>
+								<strong>CSS</strong>: Aplica el formato visual y estructural de
+								una página.
+							</li>
+						</ul>
+						<pre><code class="lang-css"><span class="hljs-selector-tag">body</span> {
+    <span class="hljs-attribute">font-family</span>: Arial, sans-serif;
+}
+</code></pre>
+						<ul>
+							<li><strong>Javascript</strong>: Permite crear efectos-web.</li>
+						</ul>
+						<pre><code class="lang-javascript">alert(<span class="hljs-string">"Hello, world!"</span>)<span class="hljs-comment">;</span>
+</code></pre>
+						<ul>
+							<li><strong>PHP</strong>: Para crear sitios dinámicos.</li>
+						</ul>
+						<pre><code class="lang-php"><span class="php"><span class="hljs-meta">&lt;?php</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-string">"Hello, world!"</span>;
+<span class="hljs-meta">?&gt;</span></span>
+</code></pre>
+						<br />
+
+						<h3 id="herramientas-de-desarrollo">Herramientas de desarrollo</h3>
+						<ul>
+							<li>
+								Cualquier programa que escriba texto plano (Notepad, Notepad++,
+								Sublime Text, etc).
+							</li>
+							<li>Un navegador Web (o más de uno).</li>
+						</ul>
+						<br />
+
+						<h3 id="convenio-de-archivos">Convenio de archivos</h3>
+						<p>
+							Los archivos de tu sitio web llevan nombres aleatorios, pero deben
+							cumplir con tres reglas por convención:
+						</p>
+						<ol>
+							<li>
+								No debe tener espacios, acentos, eñes, ni símbolos o si son
+								varias palabras usar guiones “ - “ o “ _ “ ej: “mi-pagina-web”
+							</li>
+							<li>Deben estar escritos en minúsculas</li>
+							<li>
+								Deben tener la extensión “.html” (esa es la forma que el
+								servidor web sabe que es un documento web)
+							</li>
+						</ol>
+						<br />
+
+						<h3 id="documento-predeterminado">Documento predeterminado</h3>
+						<p>
+							Es el archivo que se muestra cuando se pide una URL en un browser
+							pero no se especifica un archivo.
+						</p>
+						<br />
+
+						<h3 id="etiquetas-html">Etiquetas HTML</h3>
+						<p>
+							Las etiquetas HTML están delimitadas por un inicio y un final de
+							cada elemento.
+						</p>
+						<pre><code class="lang-html">&lt;p&gt;This <span class="hljs-keyword">is</span> a <span class="hljs-built_in">paragraph</span>.&lt;/p&gt;
+</code></pre>
+						<br />
+
+						<h3 id="atributos-de-las-etiquetas">Atributos de las etiquetas</h3>
+						<p>Todas las etiquetas aceptan atributos.</p>
+						<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://www.example.com"</span>&gt;</span>Visit Example.com<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+						<br />
+
+						<h3 id="sintaxis-del-c-digo">Sintaxis del código</h3>
+						<p>
+							Al HTML no le importa si las etiquetas las escribís una al lado de
+							la otra o una debajo de la otra.
+						</p>
+						<br />
+
+						<h3 id="comentarios-html">Comentarios HTML</h3>
+						<p>Es parte del código que el navegador no mostrará.</p>
+						<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- This is a comment --&gt;</span>
+</code></pre>
+						<br />
+
+						<h3 id="estructura-b-sica">Estructura básica</h3>
+						<p>
+							El HTML tiene una estructura de elementos que debe insertarse
+							siempre en cada documento. Hay dos elementos principales:
+							<code>&lt;head&gt;</code> y <code>&lt;body&gt;</code>.
+						</p>
+						<br />
+
+						<h3 id="doctype">Doctype</h3>
+						<p>
+							Cuando escribimos nuestro documento HTML, lo primero que tenemos
+							que escribir es el DOCTYPE.
+						</p>
+						<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+</code></pre>
+						<br />
+
+						<h3 id="tipos-de-etiqueta-grupo-general">
+							Tipos de etiqueta Grupo General
+						</h3>
+						<p>
+							Todas las etiquetas que van dentro del
+							<code>&lt;body&gt;&lt;/body&gt;</code> se dividen en dos grupos:
+						</p>
+						<ul>
+							<li>Elementos de bloque</li>
+							<li>Elementos de línea</li>
+						</ul>
+						<br />
+
+						<h3 id="etiquetas-de-usos-m-ltiples">
+							Etiquetas de usos múltiples
+						</h3>
+						<p>
+							Existen dos etiquetas las cuales son utilizadas principalmente
+							para dar formato CSS y orden.
+						</p>
+						<br />
+
+						<h3 id="html5">HTML5</h3>
+						<p>
+							HTML5 incorpora etiquetas semánticas que no sólo generan
+							estructura, sino que también definen su contenido.
+						</p>
+						<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>This is the header<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">main</span>&gt;</span>This is the main content<span class="hljs-tag">&lt;/<span class="hljs-name">main</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">footer</span>&gt;</span>This is the footer<span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span>
+</code></pre>
+						<br />
+						<hr />
+						<br />
+
+						<h2 id="referencias">Referencias</h2>
+						<ul>
+							<li>
+								<a href="https://developer.mozilla.org/es/docs/Web/HTML"
+									>MDN Web Docs</a
+								>
+							</li>
+							<li><a href="https://www.w3schools.com/">W3Schools</a></li>
+							<li>
+								<a href="https://www.coderhouse.com/"
+									>Apuntes tomados de mis clases en Coderhouse</a
+								>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</main>
+			<footer>
+				<nav class="navbar navbar-expand-md navbar-dark fixed-bottom pie">
+					<div class="container-fluid">
+						<img
+							class="pie__logo mx-1"
+							src="../images/spock_icon.png"
+							alt="Spock te saluda" />
+						<div class="navbar-collapse pie__info">
+							<a
+								class="navbar-brand pie__info__disclaimer pb-2 px-3"
+								href="./contacto.html"
+								><code
+									>proyecto_académico_sin_fines_de_lucro,_para_aclaraciones_contáctame_por_mis_redes:</code
+								></a
+							>
+							<a
+								class="navbar-brand pie__info__disclaimer_sm pb-2 px-3 me-auto ms-auto"
+								href="./contacto.html"
+								><code>contáctame,_estas_son_mis_redes:</code></a
+							>
+							<ul class="navbar-nav me-auto mb-2 mb-md-0 ms-auto pie__links">
+								<li class="nav-item mx-1">
+									<a
+										href="https://www.linkedin.com/in/thayrov-garc%C3%ADa-tovar-01a18757/"
+										target="_blank"
+										><img
+											class="pie__links_img"
+											src="../images/linkedin_icon.png"
+											alt="Logo de LinkedIn"
+									/></a>
+								</li>
+								<li class="nav-item mx-1">
+									<a href="https://github.com/Thayrov" target="_blank"
+										><img
+											class="pie__links_img"
+											src="../images/github_icon.png"
+											alt="Logo de Github"
+									/></a>
+								</li>
+								<li class="nav-item mx-1">
+									<a href="https://www.facebook.com/thayrovg" target="_blank"
+										><img
+											class="pie__links_img"
+											src="../images/facebook_icon.png"
+											alt="Logo de Facebook"
+									/></a>
+								</li>
+								<li class="nav-item mx-1">
+									<a href="https://twitter.com/ThayrovG" target="_blank"
+										><img
+											class="pie__links_img"
+											src="../images/twitter_icon.png"
+											alt="Logo de Twitter"
+									/></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</footer>
+		</div>
+		<script src="../scripts/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
